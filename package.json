@@ -23,7 +23,7 @@
 		"wdio": "wdio run ./wdio.conf.js",
 		"chrome": "wdio run ./conf/chrome.conf.js",
 		"firefox": "wdio run ./conf/firefox.conf.js",
-		"allure-report": "allure generate allure-results --clean -o allure-report && allure open",
+		"allure-report": "npx allure generate allure-results --clean -o allure-report && allure open",
 		"wdio-docker": "wdio run conf/docker.conf.js",
 		"wdio-docker:chrome": "wdio run conf/chrome.docker.conf.js",
 		"wdio-docker:firefox": "wdio run conf/firefox.docker.conf.js"

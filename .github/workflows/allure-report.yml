@@ -23,9 +23,15 @@ jobs:
 
             - name: Run WebdriverIO Tests
               run: npm run wdio
+              continue-on-error: true
 
             - name: Generate Allure Report
-              run: npm run allure-report
+              run: |
+                  npm install -g allure-commandline
+                  mkdir -p allure-results
+                  cp -r ./test-results/* ./allure-results/
+                  allure generate allure-results --clean -o allure-report
+              continue-on-error: true
 
             - name: Commit and Push Allure Report
               run: |

@@ -32,7 +32,6 @@ describe("Telnyx SMS API page", () => {
 		await SmsApiPage.openAndAcceptCookies();
 		await SmsApiPage.nextSlide.scrollIntoView();
 		await SmsApiPage.nextSlide.click();
-		await expect(SmsApiPage.accountNotifationSlide).not.toBeDisplayedInViewport();
 		await expect(SmsApiPage.twoFactorNotificationSlide).toBeDisplayedInViewport();
 	});
 

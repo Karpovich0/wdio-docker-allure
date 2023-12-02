@@ -27,6 +27,7 @@ export default class Page {
 
 	async openAndAcceptCookies(path) {
 		await browser.url(`${path}`);
+		await browser.pause(2000);
 		if (await this.acceptCookiesButton.isDisplayedInViewport()) {
 			await this.acceptCookies();
 		}

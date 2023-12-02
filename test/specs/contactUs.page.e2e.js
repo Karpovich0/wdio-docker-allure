@@ -4,7 +4,7 @@ import ContactUsPage from "./../pageobjects/contactUs.page.js";
 import telnyx from "./../fixutes/telnyx.js";
 
 describe("Telnyx SMS API page", () => {
-	it("Page Validation", async () => {
+	it("Page Load Validation", async () => {
 		await ContactUsPage.openAndAcceptCookies();
 		await expect(browser).toHaveUrl(telnyx.contactUsLink);
 		await expect(await $("h1")).toHaveText(telnyx.contactUsTitle);

@@ -25,6 +25,7 @@
 		"firefox": "wdio run ./conf/firefox.conf.js",
 		"allure-report": "npx allure generate allure-results --clean -o allure-report && allure open",
 		"allure-report-github": "npx allure generate allure-results --clean -o allure-report",
+		"docker-compose": "docker-compose -f docker/docker-compose.yml up -d",
 		"wdio-docker": "wdio run conf/docker.conf.js",
 		"wdio-docker:chrome": "wdio run conf/chrome.docker.conf.js",
 		"wdio-docker:firefox": "wdio run conf/firefox.docker.conf.js"

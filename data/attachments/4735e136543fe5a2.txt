@@ -1,4 +1,0 @@
-{
-  "using": "css selector",
-  "value": "#to-the-hyperlocal-edge"
-}

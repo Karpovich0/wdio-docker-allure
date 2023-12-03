@@ -1,0 +1,4 @@
+{
+  "using": "css selector",
+  "value": "[aria-label=\"Go to next item\"]"
+}
